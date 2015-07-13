@@ -2,6 +2,13 @@
 <html>
 
 <head>
+  <!--<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding"> -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Compare size of planet Earth">
+  <meta name="keywords" content="d3, d3.js, visualization, Sun, Earth, Astronomy, Solar_System">
+  <meta name="author" content="Jesús Martínez-Blanco">
+
 	<title>Earth</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   <link href="chumo.css" rel="stylesheet">
@@ -11,7 +18,7 @@
 
 <body style='text-align:center'>
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a3a9ab5aac0b42" async="async"></script>
+  <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a3a9ab5aac0b42" async="async"></script>
   
   <div id='header'>
     <h1>Compare the Earth with...</h1>
@@ -96,15 +103,18 @@
       .enter()
       .append('div')
       .attr('class','selector')
+      .attr('id',function(d){return d.name;})
       .attr('onclick','selectPlanet(event)')
       .style('border-color',function(d){return ('Pluto' == d.name) ? 'yellow' : 'transparent';})
       .text(function(d){return d.name;});
 
   var selectPlanet = function(event){
-    elem = planets.filter(function(d){return d.name == event.srcElement.innerText;});
+    elem = planets.filter(function(d){return d.name == event.target.id;});
+
     L = 2*svgSC(elem[0].r)/elem[0].dFraction;
     imPad = L/2-svgSC(elem[0].r);
     selected
+      .transition()
       .attr('x',w/2+pd-imPad)
       .attr('y',h/2-L/2)
       .attr('width',L)
