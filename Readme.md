@@ -20,7 +20,7 @@ The original images can be found in the following links:
 * [Neptune](https://commons.wikimedia.org/wiki/File:Neptune.jpg)
 * [Pluto](https://www.nasa.gov/sites/default/files/thumbnails/image/071215_pluto_alone_0.png)
 
-You can try the web-app in the project site:.
+You can try the web-app in the project site: [http://chumo.github.io/Earth/](http://chumo.github.io/Earth/).
 
 Enjoy!
 
