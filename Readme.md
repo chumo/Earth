@@ -18,7 +18,7 @@ The original images can be found in the following links:
 * [Saturn](https://commons.wikimedia.org/wiki/File%3ASaturn_(planet)_large.jpg)
 * [Uranus](https://commons.wikimedia.org/wiki/File:Uranus.jpg)
 * [Neptune](https://commons.wikimedia.org/wiki/File:Neptune.jpg)
-* [Pluto](https://commons.wikimedia.org/wiki/File:NH-Pluto-color-NewHorizons-20150713.png)
+* [Pluto](https://www.nasa.gov/sites/default/files/thumbnails/image/nh-pluto-in-false-color.jpg)
 
 You can try the web-app in the project site: [http://chumo.github.io/Earth/](http://chumo.github.io/Earth/).
 
